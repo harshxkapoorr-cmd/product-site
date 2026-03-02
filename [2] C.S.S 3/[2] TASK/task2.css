@@ -1,0 +1,27 @@
+*
+{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#main-container
+{
+    display: flex;
+    
+}
+#body
+{
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+   align-content: center;
+   flex-wrap: nowrap;
+   background-color: rgb(63, 117, 203);
+   
+}
+#square
+{
+    height: 700px;
+   background-color: r(22, 67, 158);
+}
+

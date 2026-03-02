@@ -1,0 +1,26 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #333;
+}
+body
+{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+   
+}
+
+#card
+{
+    
+    background-color: aliceblue;
+    height: 400px;
+    width:100px;
+    
+    
+    transform: translate(640px, 320px);
+    transition: transform 2s;
+}

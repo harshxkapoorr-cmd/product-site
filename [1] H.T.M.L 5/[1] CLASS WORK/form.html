@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+
+<body>
+
+    <h1>FORM AND ITS TAGS IN H.T.M.L 5.</h1>
+
+    <hr>
+
+    <br>
+
+    <form action="#" method="post">
+
+        <fieldset>
+
+            <legend>     
+                <b>STUDENT REGISTRATION FORM</b>
+            </legend>
+
+            <br>
+
+            <label for="userFirstName">FIRST NAME:</label>
+            <input id="userFirstName" type="text" placeholder="Enter Your First Name Here." size="21" required>
+
+            <br>
+            <br>
+
+            <label for="userMiddleName">MIDDLE NAME:</label>
+            <input type="text" id="userMiddleName" placeholder="Enter Your Middle Name Here" size="23">
+
+            <br>
+            <br>
+
+            <!-- WRAPPING UP THE INPUT. -->
+            <!-- SECOND APPROACH. -->
+
+            <label>SURNAME:
+
+                <input type="text" placeholder="Enter Your SurName Here.">
+
+            </label>
+
+            <br>
+            <br>
+
+            <label for="userAge">AGE:</label>
+            <input id="userAge" type="number" min="15" max="25" placeholder="AGE" required>
+
+            <br>
+            <br>
+
+            <label for="userEmailId">E-MAIL:</label>
+            <input type="email" id="userEmailId" placeholder="Enter Your Email ID Here." required>
+
+            <br>
+            <br>
+
+            <label for="userPassword">PASSWORD:</label>
+            <input type="password" id="userPassword" placeholder="Enter Your Password Here." required>
+
+            <br>
+            <br>
+
+            <label for="userSearchBar">SEARCH BAR:</label>
+            <input id="userSearchBar" type="search" placeholder="Enter What You Want To Search." size="25">
+
+            <br>
+            <br>
+
+            <label for="userAddress">ADDRESS:</label>
+            <br>
+            <br>
+            <textarea name="addressField" id="userAddress" rows="15" cols="100"
+                placeholder="Enter Your Valid Address Here." required></textarea>
+
+            <br>
+            <br>
+
+            <label for="userContactNumber">CONTACT NUMBER:</label>
+            <input type="tel" id="userContactNumber" placeholder="Enter Your Contact Number Here." size="26" required>
+
+            <dfn>+91 - 98765 - 43210</dfn>
+
+            <br>
+            <br>
+
+            <label for="userHandle">SOCIAL MEDIA HANDLE:</label>
+            <input type="url" id="userHandle" placeholder="Enter Your Social Media Handle Here." size="29">
+
+            <br>
+            <br>
+
+            <label for="userHomeState">STATE:</label>
+            <select name="stateOptions" id="userHomeState">
+                <option value="andhra">ANDHRA PRADESH</option>
+                <option value="arunachalpradesh">ARUNACHAL PRADESH</option>
+                <option value="assam">ASSAM</option>
+                <option value="bihar">BIHAR</option>
+                <option value="chhattisgarh">CHHATTISGARH</option>
+                <option value="goa">GOA</option>
+                <option value="gujarat">GUJARAT</option>
+                <option value="haryana">HARYANA</option>
+                <option value="himachalpradesh">HIMACHAL PRADESH</option>
+                <option value="jharkhand">JHARKHAND</option>
+                <option value="karnataka">KARNATAKA</option>
+                <option value="kerala">KERALA</option>
+                <option value="madhyapradesh">MADHYA PRADESH</option>
+                <option value="maharashtra">MAHARASHTRA</option>
+                <option value="manipur">MANIPUR</option>
+                <option value="meghalaya">MEGHALAYA</option>
+                <option value="mizoram">MIZORAM</option>
+                <option value="nagaland">NAGALAND</option>
+                <option value="odisha">ODISHA</option>
+                <option value="punjab">PUNJAB</option>
+                <option value="rajasthan">RAJASTHAN</option>
+                <option value="sikkim">SIKKIM</option>
+                <option value="tamilnadu">TAMIL NADU</option>
+                <option value="telangana">TELANGANA</option>
+                <option value="tripura">TRIPURA</option>
+                <option value="uttarpradesh">UTTAR PRADESH</option>
+                <option value="uttarakhand">UTTARAKHAND</option>
+                <option value="westbengal">WEST BENGAL</option>
+
+                <option value="andamanandnicobarislands">ANDAMAN AND NICOBAR ISLANDS</option>
+                <option value="chandigarh">CHANDIGARH</option>
+                <option value="dadraandnagarhavelianddamananddiu">DADRA AND NAGAR HAVELI AND DAMAN AND DIU</option>
+                <option value="lakshadweep">LAKSHADWEEP</option>
+                <option value="delhi">DELHI</option>
+                <option value="puducherry">PUDUCHERRY</option>
+                <option value="ladakh">LADAKH</option>
+                <option value="lakshadweep">LAKSHADWEEP</option>
+                <option value="jammuandkashmir">JAMMU AND KASHMIR</option>
+
+            </select>
+
+            <br>
+            <br>
+            <br>
+
+            <fieldset>
+
+                <legend>
+                    <b>FILL UP THE DETAILS</b>
+                </legend>
+
+                <br>
+
+                <label for="userGender">CHOOSE GENDER:</label>
+
+                <br>
+                <br>
+
+                <input type="radio" id="maleGender" name="userGender" value="male">
+                <label for="maleGender">MALE</label>
+
+                <br>
+                <br>
+
+                <input  type="radio" id="femaleGender" name="userGender" value="female">
+                <label for="femaleGender">FEMALE</label>
+
+                <br>
+                <br>
+
+                <input type="radio" id="otherGender" name="userGender" value="others">
+                <label for="otherGender">OTHERS</label>
+
+                <br>
+                <br>
+
+                <hr>
+
+                <!-- <label for="user"></label> -->
+
+                <!-- TODAYS TOPIC BEGINS FROM HERE. -->
+
+                <br>
+
+                <label for="courseSelection">CHOOSE COURSE:</label>
+
+                <br>
+                <br>
+
+                <input type="checkbox" id="pythonDevelopment" value="python devlopment">
+                <label for="pythonDevelopment">PYTHON DEVELOPMENT</label>
+
+                <br>
+                <br>
+
+                <input type="checkbox" id="dataAnalytics" value="dataAnalytics">
+                <label for="dataAnalytics">DATA ANALYTICS</label>
+
+                <br>
+                <br>
+
+                <input type="checkbox" id="machineLearning" value="machineLearning">
+                <label for="machineLearning">MACHINE LEARNING.</label>
+
+                <br>
+                <br>
+
+                <input type="checkbox" id="blockchainDevelopment" value="blockchainDevelopment">
+                <label for="blockchainDevelopment">BLOCKCHAIN DEVELOPMENT</label>
+
+                <br>
+                <br>
+
+                <input type="checkbox" id="cryptographyAndEncryption" value="cryptographyAndEncryption">
+                <label for="cryptographyAndEncryption">CRYPTOGRAPHY AND ENCRYPTION.</label>
+
+                <br>
+                <br>
+
+                <hr>
+
+                <br>
+
+                <label for="rangeSelector">SELECT RANGE:</label>
+                <br>
+                <br>
+                <input type="range" min="0" max="100" value="89">
+
+                <br>
+                <br>
+
+                <label for="colorSelection">CHOOSE COLOR:</label>
+                <br>
+                <br>
+                <input type="color" value="red">
+
+                <br>
+                <br>
+
+                <label for="datePicker">SELECT DATE:</label>
+                <br>
+                <br>
+                <input type="date" id="datePicker">
+
+                <br>
+                <br>
+
+                <label for="dateAndTimePicker">SELECT EXACT DATE AND TIME:</label>
+
+                <br>
+                <br>
+
+                <!-- THIS ATTRIBIUTE TYPE HAS BEEN DEPRECEATED. -->
+                 <p>THIS ONE HAS BEEN DEPRECEATED.</p>
+                <input type="datetime" placeholder="DEPRECEATED ONE">
+
+                <br>
+                <br>
+
+                <!-- THIS ONE WILL BE USED FOR THE DATE AND TIME PURPOSE. -->
+
+                <input type="datetime-local" id="dateAndTimePicker">
+
+                <br>
+                <br>
+
+
+                <label for="timePicker">CHOOSE TIME:</label>
+                <br>
+                <br>
+                <input type="time" id="timePicker">
+
+                <br>
+                <br>
+
+                <label for="weekPicker">SELECT WEEK:</label>
+                <br>
+                <br>
+                <input type="week" id="weekPicker">
+
+                <br>
+                <br>
+
+                <label for="monthPicker">SELECT MONTH:</label>
+                <br>
+                <br>
+                <input type="month" id="monthPicker">
+
+                <br>
+                <br>
+
+                <label for="fileUpload">CHOOSE DOCUMENTS:</label>
+                <input type="file" id="fileUpload" value="File">
+
+                <br>
+                <br>
+
+                <label for="hiddenType">THIS ELEMENT WILL BE HIDDEN:</label>
+                <input type="hidden" id="hiddenType">
+
+                <br>
+                <br>
+
+                <label for="imageIcon">IMAGE:</label>
+                <input type="image" required>
+
+                <!-- INSIDE THE FORM. -->
+
+                <br>
+                <br>
+
+
+                <input type="button" value="VERIFY">
+                <input type="submit" value="SUBMIT DATA">
+                <input type="reset" value="RESET DATA">
+
+
+            </fieldset>
+
+        </fieldset>
+
+
+    </form>
+
+    <br>
+    <br>
+
+
+    <button>SEND DATA</button>
+    <button type="button">LOG IN</button>
+    <button disabled="disabled">DELETE ALL DATA</button>
+    <button type="reset">RESET ALL THE DATA</button>
+    <button type="submit">SUBMIT ALL THE DATA</button>
+    
+</body>
+
+</html>

@@ -1,0 +1,362 @@
+﻿:root {
+  --bg: #f7f4ef;
+  --surface: #ffffff;
+  --surface-strong: #f2ece0;
+  --text: #1f1c16;
+  --muted: #625a4c;
+  --primary: #bd4f25;
+  --primary-strong: #943c1b;
+  --border: #e0d6c6;
+  --radius: 16px;
+  --shadow: 0 12px 28px rgba(31, 28, 22, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(189, 79, 37, 0.12) 0%, transparent 34%),
+    radial-gradient(circle at 88% 10%, rgba(73, 126, 109, 0.12) 0%, transparent 28%),
+    var(--bg);
+}
+
+.container {
+  width: min(1160px, 92%);
+  margin-inline: auto;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(247, 244, 239, 0.94);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-wrap {
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brand {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--text);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  padding: 0.48rem 0.85rem;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.nav a:hover,
+.nav a:focus-visible {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
+.menu-btn {
+  display: none;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  padding: 0.45rem 0.8rem;
+  border-radius: 10px;
+  font: inherit;
+}
+
+.panel {
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.panel-inner {
+  max-width: 860px;
+}
+
+.hero-panel {
+  background: linear-gradient(145deg, #fff8ee, #f2ece0);
+}
+
+.alt-panel {
+  background: linear-gradient(145deg, #f1e9db, #f8f4ec);
+}
+
+.closing-panel {
+  background: linear-gradient(145deg, #26180f, #3d2618);
+  color: #fdf6ec;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.7rem);
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: clamp(1.6rem, 3vw, 2.5rem);
+  margin-bottom: 0.9rem;
+}
+
+p {
+  margin: 0 0 1rem;
+  color: var(--muted);
+  font-size: clamp(1rem, 1.2vw, 1.12rem);
+}
+
+.eyebrow {
+  margin-bottom: 0.6rem;
+  color: var(--primary);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-size: 0.82rem;
+}
+
+.feature-grid,
+.stats-grid,
+.product-grid,
+.contact-grid,
+.about-layout {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.feature-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.stats-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.tile,
+.product-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}
+
+.tile p,
+.product-card p {
+  margin-bottom: 0;
+}
+
+.list {
+  margin: 0.8rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.list li {
+  margin-bottom: 0.45rem;
+  color: var(--muted);
+}
+
+.timeline {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.timeline-item {
+  border-left: 4px solid var(--primary);
+  padding: 0.35rem 0.75rem;
+  background: var(--surface-strong);
+  border-radius: 8px;
+  color: var(--text);
+}
+
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background: var(--primary);
+  color: #fff;
+  font-weight: 700;
+  border: 1px solid var(--primary);
+  padding: 0.68rem 1rem;
+  border-radius: 10px;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background: var(--primary-strong);
+  border-color: var(--primary-strong);
+}
+
+.btn-outline {
+  background: transparent;
+  color: #fff;
+  border-color: #fff;
+}
+
+.btn-outline:hover,
+.btn-outline:focus-visible {
+  background: #fff;
+  color: #24160d;
+}
+
+.page-main {
+  min-height: calc(100vh - 72px);
+}
+
+.page-header {
+  padding: 3rem 0 1.5rem;
+}
+
+.catalog-section,
+.contact-section,
+.about-section {
+  padding: 0 0 3rem;
+}
+
+.product-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.product-card h3 {
+  margin-top: 0.8rem;
+  margin-bottom: 0.45rem;
+  font-size: 1.05rem;
+}
+
+.product-card img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.price {
+  color: var(--primary);
+  font-weight: 800;
+}
+
+.contact-grid,
+.about-layout {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.founder-card {
+  background: linear-gradient(170deg, #fff 0%, #f3ebde 100%);
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  background: #f5efe4;
+}
+
+.footer-wrap {
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+
+.footer-wrap a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+  .feature-grid,
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .stats-grid,
+  .contact-grid,
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .menu-btn {
+    display: inline-block;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    right: 4%;
+    top: 68px;
+    flex-direction: column;
+    align-items: stretch;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 0.75rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    min-width: 190px;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .nav a {
+    text-align: center;
+  }
+
+  .panel {
+    min-height: auto;
+    padding: 3.1rem 0;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,221 @@
+/* CONCEPTS OF SELECTORS IN C.S.S 3. */
+
+/* 1. BASIC SELECTORS OR ELEMENT SELECTORS. */
+
+/* h1
+{
+    BASIC EXAMPLE OF ELEMENT SELECTOR. 
+} */
+
+/* GLOBAL SELECTOR OR UNIVERSAL SELECTOR IN C.S.S 3. */
+
+*
+{
+    background-color: teal;
+    margin:0px;
+}
+
+/* ID SELECTORS IN C.S.S 3. */
+
+/* #one
+{
+    font-size: 30px;
+    color: red;
+} */
+
+/* #two
+{
+    font-size: 15px;
+    color:blue;
+} */
+
+/* CLASS SELECTORS IN C.S.S 3. */
+
+/* .headings
+{
+    text-align: center;
+    font-size: 120px;
+    color: whitesmoke;
+    font-style:italic
+} */
+
+/* GROUP SELECTORS: THESE ARE JUST A GROUP OF NORMAL SELECTORS OR ELEMENT SELECTORS.  */
+
+/* PARTIAL COMMENT. */
+
+/* aside, section, address, main, article
+{
+    text-align: center;
+    font-size: 100px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style:italic;
+    color:burlywood
+} */
+
+/* SIBLING SELECTORS. */
+
+/* 1. ADJACENT SIBLING SELECTOR OR DIRECT SIBLING SELECTOR.  */
+
+/* h4 + h5
+{
+    text-align:right;
+    font-size: 5rem;
+    color: cornflowerblue;
+    font-style:italic;
+} */
+
+/* 2. GENERAL SIBLING SELECTOR OR INDIRECT SIBLING SELECTOR.  */
+
+/* h4~h6
+{
+    text-align: center;
+    font-size: 5em;
+    text-decoration:underline;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color:bisque;
+} */
+
+/* CONCEPTS OF COMBINATORS IN C.S.S 3. */
+
+/* 1. DESCENDANT SELECTOR OR COMBINATOR. */
+
+/* div h2
+{
+    color: brown;
+    text-align: center;
+    font-size: 50px;
+} */
+
+/* 2. CHILD SELECTOR OR COMBINATOR. */
+
+/* div>main>aside>h2
+{
+    color:indigo;
+} */
+
+/* TARGETING THE SPAN ELEMENT. */
+
+/* SPECIFICITY OF SELECTORS IN C.S.S 3. */
+
+/* div
+{
+    color: burlywood;
+    text-align:center;
+    font-size: 2rem;
+}
+
+.inline_element
+{
+    font-style:italic;  
+    text-align:right; 
+}
+
+#sample-One
+{
+    text-align:left; 
+} */
+
+/* EIGHT CONCEPT. */
+
+#element-one
+{
+    /* SHORTHAND PROPERTY. */
+    border: 5px solid orange;
+
+
+   /* LONG HAND PROPERTY. */
+
+   /* WHEN USER WANTS MORE PRECISION AND SPECIFIC CONTROL OVER THE ELMENT. */
+
+   /* border-width: 10px;
+   border-style:groove;
+   border-color:aqua; */
+
+   /* CASCADING EFFECT. */
+
+   /* TOP TO BOTTOM EXECUTION ORDER.  */
+
+
+
+
+   /* height: 50px;
+   width: 100px;
+   background-color: cornflowerblue; */
+}
+
+/* #element-two
+{
+    border: 5px dashed indigo;
+} */
+
+/* #element-three
+{
+    border: 10px dotted grey;
+    background-color: lightblue;
+}
+
+#element-three>h3
+{
+    background-color: lightblue;
+}
+
+#element-three>article
+{
+    background-color: lightblue;
+} */
+
+
+/* PROPERTY */
+
+/* 1. SINGLE KEYWORD. */
+/* 2. MULTI KEYWORD. */
+
+/* NINTH CONCEPT. */
+
+/* SPACING AND ALIGNMENT IN C.S.S 3. */
+
+#box-one
+{
+    border: 7px solid black;
+    height:200px;
+    width:200px;
+}
+
+/* BODY IS THE PARENT CONTAINER. */
+
+body
+{
+    border: 5px solid blue;
+}
+
+/* MARGIN PROPERTY. */
+
+/* PADDING PROPERTY. */
+
+.boxes
+{
+    margin: 50px;
+}
+
+#container
+{
+    border: 5px solid whitesmoke;
+    margin: 100px;
+    padding: 50px;
+}
+
+#child
+{
+    border: 3px solid red;
+    margin: 20px;
+    padding: 40px
+}
+
+#para-one
+{
+    border: 1px solid blue;
+    margin: 10px;
+    padding: 30px;
+}
+
